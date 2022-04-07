@@ -15,6 +15,7 @@
 	</listener>
 
 	<!-- Processes application requests -->
+	 <!-- DefaultServlet은 모든 요청을 받는다. Servers폴더 Web.xml에서도 확인 가능 -->
 	<servlet>
 		<servlet-name>appServlet</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
