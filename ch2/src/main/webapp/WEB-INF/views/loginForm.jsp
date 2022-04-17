@@ -56,7 +56,7 @@
         }
     </style>
 </head>
-<body>
+<body>    <!-- c:url을 통해서 쿠키를 허용하지 않는 브라우저에서도 세션 ID를 url에 붙여줄수 있다.-->
     <form action="<c:url value='/login/login'/>" method="post" onsubmit="return formCheck(this);">
         <h3 id="title">Login</h3>
         <div id="msg">
