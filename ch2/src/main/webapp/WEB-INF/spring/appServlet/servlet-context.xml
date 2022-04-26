@@ -39,8 +39,7 @@
 			</beans:props>
 		</beans:property>
   	</beans:bean>	
-	
-	<beans:bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+  	<beans:bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
 		<beans:property name="basenames">
 			<beans:list>
 				<beans:value>error_message</beans:value> <!-- /src/main/resources/error_message.properties -->
