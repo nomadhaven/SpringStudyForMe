@@ -14,6 +14,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.Validator;
 import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -40,8 +41,8 @@ public class RegisterController {
 	}
 
 		
-	@RequestMapping(value="/add", method={RequestMethod.GET, RequestMethod.POST})
-	//@GetMapping("/add")
+	//@RequestMapping(value="/add", method={RequestMethod.GET, RequestMethod.POST})
+	@GetMapping("/add")
 	public String register() {
 		return "registerForm"; //WEB-INF/views/registerForm.jsp
 				
@@ -49,7 +50,7 @@ public class RegisterController {
 	
 	
 	//@RequestMapping(value="/save", method=RequestMethod.POST)
-	@PostMapping("/save") //4.3부터 사용가능
+	@PostMapping("/add") //4.3부터 사용가능
 	public String save(@Valid User user, BindingResult result, Model m) throws Exception{
 		System.out.println("result="+result);
 		System.out.println("user="+user);
