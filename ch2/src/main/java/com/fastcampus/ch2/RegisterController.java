@@ -64,7 +64,6 @@ public class RegisterController {
 		}
 		
 		
-	
 //		//1.유효성 검사
 //		if(!isValid(user)) {
 //			String msg= URLEncoder.encode("id를 잘못 입력하셨습니다.","utf-8");
